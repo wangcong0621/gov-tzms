@@ -1,0 +1,19 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /project
+spring:
+  application:
+    name: tzms-service-project
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.93.101:8848
+    sentinel:
+      transport:
+        dashboard: 192.168.93.101:8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

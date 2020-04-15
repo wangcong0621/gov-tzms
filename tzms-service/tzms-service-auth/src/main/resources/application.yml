@@ -1,0 +1,19 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /auth
+spring:
+  application:
+    name: tzms-service-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.93.101:8848
+    sentinel:
+      transport:
+        dashboard: 192.168.93.101:8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

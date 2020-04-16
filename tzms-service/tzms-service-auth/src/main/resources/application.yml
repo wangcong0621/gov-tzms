@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 8091
   servlet:
     context-path: /auth
 spring:
@@ -8,10 +8,10 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.93.101:8848
+        server-addr: 192.168.180.122:8848
     sentinel:
       transport:
-        dashboard: 192.168.93.101:8080
+        dashboard: 192.168.180.122:8080
 management:
   endpoints:
     web:

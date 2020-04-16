@@ -1,12 +1,12 @@
 server:
-  port: 9000
+  port: 8090
 spring:
   application:
     name: tzms-service-gateway
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.93.101:8848
+        server-addr: 192.168.180.122:8848
     gateway:
       routes:
         - id: tzms-service-project
